@@ -44,7 +44,6 @@ public class Practice10 {
             //To print the sum and the average
             System.out.println("The Sum: "+ sum);
             System.out.println("The Average: "+ ave);
-            
     }
     
 }
