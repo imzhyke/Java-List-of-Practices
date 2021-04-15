@@ -1,8 +1,9 @@
 /*
  * Title: Practice 19
  * Name: Ezekiel P. Villadolid
- * Description: 
- * Date: 
+ * Description: program that prompts the user to input a number. The program should then output the
+                number and a message saying whether the number is positive, negative or zero.
+ * Date: 4/14/2021
 */
 package Practice19;
 
@@ -10,6 +11,7 @@ import java.util.Scanner;
 
 public class Practice19 {
     
+    //variable declaration
     private static int num;
     
     public static void main(String[] args) {
@@ -22,17 +24,18 @@ public class Practice19 {
         
     }
     
+    //method to perform the checking
     public static void integerChecker(){
-        if(num > 0)
-        {
+        //the condition to check if Integer is a positive number
+        if(num > 0) {
             System.out.println("The given number "+num+" is Positive");
         }
-        else if(num < 0)
-        {
+         //the condition to check if Integer is a negative number
+        else if(num < 0) {
             System.out.println("The given number "+num+" is Negative");
         }
-        else
-        {
+         //This will perform if integer is not a negative or positive value
+        else {
             System.out.println("The given number "+num+" is neither Positive nor Negative ");
         }
         
