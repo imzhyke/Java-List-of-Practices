@@ -29,35 +29,46 @@ public static void main(String[] args){
     int numOfBasicServConn;
     double amountDue;
 
-    Scanner console = new Scanner(System.in);   
+    Scanner detector = new Scanner(System.in);   
 
+    //To get the account number
+    System.out.println("=====================");
     System.out.println("This program computes a cable bill.");
-    System.out.println("Enter account number (an integer): ");
-    accountNumber = console.nextInt();
+    System.out.print("Enter account number (an integer): ");
+    accountNumber = detector.nextInt();
 
+    //To get the customers type
     System.out.println("R or r (Residential) ");
     System.out.println("B or b (Business)");
     System.out.println("Enter customer type: ");
-    customerType = console.next().charAt(0);
+    customerType = detector.next().charAt(0);
 
+    //To check if customers type
     switch (customerType){
+        
         case 'r':
         case 'R':
+            //To get the premium channerls
             System.out.print("Enter the number of premium channels:");
-            numOfPremChannels = console.nextInt(); 
+            numOfPremChannels = detector.nextInt();
+            
+            //To calculate the total cost
             amountDue = RES_BILL_PROC_FEES + RES_BASIC_SERV_COST + (numOfPremChannels * RES_COST_PREM_CHANNEL);
+
+            System.out.println("=====================");
             System.out.printf("Account Number: ");
             System.out.printf("%d \n", accountNumber);
             System.out.printf("Amount Due: $");
             System.out.printf("%.2f \n", amountDue);
+            System.out.println("=====================");
             break;
 
         case 'b':
         case 'B':
             System.out.printf("Enter number of basic service connections: ");
-            numOfBasicServConn = console.nextInt();
+            numOfBasicServConn = detector.nextInt();
             System.out.printf("Enter number of premium channels: ");
-            numOfPremChannels = console.nextInt();
+            numOfPremChannels = detector.nextInt();
 
             if (numOfBasicServConn <= 10){
                 amountDue = (numOfPremChannels * BUS_COST_PREM_CHANNEL) + BUS_BILL_PROC_FEES + BUS_BASIC_SERV_COST;
@@ -65,10 +76,12 @@ public static void main(String[] args){
             else{
                 amountDue = BUS_BILL_PROC_FEES + BUS_BASIC_SERV_COST + (numOfBasicServConn - 10) * BUS_BASIC_CONN_COST + numOfPremChannels * BUS_COST_PREM_CHANNEL;
             }
+            System.out.println("=====================");
             System.out.printf("Account Number: ");
             System.out.printf("%d \n", accountNumber);
             System.out.printf("Amount Due: $");
             System.out.printf("%.2f \n", amountDue);
+            System.out.println("=====================");
             break;
 
         default:
