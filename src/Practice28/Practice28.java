@@ -25,7 +25,7 @@ public class Practice28 {
          
          //a. Prompt the user to input two integers
         do{
-            System.out.println("\nInput two integers. First must be less than second.");
+            System.out.println("\nA. Input two integers. First must be less than second.");
             System.out.print("Fist Number: ");
             firstNum=thisScans.nextInt();
             System.out.print("Second Number: ");
@@ -35,8 +35,9 @@ public class Practice28 {
         
         
         //b. Output all the odd numbers between firtNum and secondNum inclusive.
-        int number = (int)firstNum;
-
+        System.out.print("\nB. Output all odd numbers between firstNum and secondNum inclusive.\n");
+	int number = (int)firstNum;
+        
 	while (number <= secondNum)
 	{
 		if ((number % 2) != 0)
@@ -51,10 +52,9 @@ public class Practice28 {
 	}
         
         //c. Output the sum of all even numbers between firstNum and secondNum.
-	System.out.print("c. Output the sum of all even numbers between firstNum and secondNum.\n");
+	System.out.print("\nC. Output the sum of all even numbers between firstNum and secondNum inclusive.\n");
 	number = (int)firstNum;
 	int sum = 0;
-
 
 	while (number <= secondNum)
 	{
@@ -72,7 +72,7 @@ public class Practice28 {
 
 
 	//d. Output the numbers and their squares between 1 and 10.
-	System.out.print("d.Output the numbers and their squares between 1 and 10.\n");
+	System.out.print("\nD.Output the numbers and their squares between 1 and 10.\n");
 	number = 1;
 	while (number <= 10)
 	{
@@ -89,7 +89,7 @@ public class Practice28 {
 
 
 	//e. Output the sum of the square of the odd numbers between firstNum and secondNum.
-	System.out.print("Output the sum of the square of the odd numbers between firstNum and secondNum\n");
+	System.out.print("\nE. Output the sum of the square of the odd numbers between firstNum and secondNum\n");
 	number = (int)firstNum;
 	sum = 0;
 	while (number <= secondNum)
@@ -110,19 +110,17 @@ public class Practice28 {
 	System.out.print("\n\n");
 
 
-	//f. Output all uppercase letters.
-	System.out.print("Output all uppercase letters.\n");
+	//F. Output all uppercase letters.
+	System.out.print("\nF. Output all uppercase letters.\n");
 	int c = 65;
-
-
+        
 	while (c < 91)
 	{
 		System.out.print((char)(c++));
 		System.out.print(", ");
 	}
 	System.out.print("\n");
-
-         
+  
     }
     
 }
