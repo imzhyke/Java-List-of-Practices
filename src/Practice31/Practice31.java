@@ -1,22 +1,44 @@
 /*
  * Title: Practice 31
  * Name:  Ezekiel P. Villadolid
- * Description: Create a program having a three by four two dimentional array. Multiply each elemtn bt 10 and display the result value. 
+ * Description: Read and print  a rowcolumn matrix, number of rows and number of columns will be read through the user.
  * Date: 5/26/2021
 */
 package Practice31;
 
-/**
- *
- * @author Zhyke
- */
-public class Practice31 {
+import java.util.Scanner;
 
-    /**
-     * @param args the command line arguments
-     */
+public class Practice31 {
     public static void main(String[] args) {
-        // TODO code application logic here
+            //Create the scanner
+            Scanner thisScans = new Scanner(System.in);
+            
+            System.out.print("Enter number of rows: ");
+            int rows = thisScans.nextInt();
+            
+            System.out.print("Enter number of columns: ");
+            int columns = thisScans.nextInt();
+
+            //Decratn of arrayio
+            int arr[][] = new int [rows][columns];
+
+            //To get the value of the arrays
+            for(int x=0 ; x<rows ; x++){
+                 for(int y=0 ; y<columns ; y++){
+                     //To get the value of each elemets
+                     System.out.printf("Enter value [%d][%d]: ",x,y);
+                     arr[x][y] = thisScans.nextInt();
+                }
+            }
+
+            //Tp print the value of the element
+            System.out.println("\nValue of array");
+            for(int x=0 ; x<rows ; x++){
+                 for(int y=0 ; y<columns ; y++){
+                     System.out.print(arr[x][y]+"\t");
+                }
+                System.out.println();
+             }
+
     }
-    
 }
