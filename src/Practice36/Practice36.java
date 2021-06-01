@@ -26,19 +26,35 @@ public class Practice36 {
             System.out.print("Element ["+(x+1)+"] : ");
                 arr[x]=thisScans.nextInt();
         }
-        int low,high,temp;
-        for(int x = 0; x<n; x++){
-            low=arr[x];
-            high=arr[x];
-            if(low>arr[x+1]){
-                low = arr[x+1];
-            }
-            if(high<arr[x+1]){
-                low = arr[x+1];
-            }
-        }
+        //method Call  to get the max and min value
+        int low =getMinValue(arr);
+        int high =getMaxValue(arr);
         
-s
+        //Print the maximum and minimum value in an array
+        System.out.println("Maximum element is "+high);
+        System.out.println("Minimum element is "+low);
     }
     
+    //Method to get the maximum value of an array
+    public static int getMaxValue(int[] arr){
+        int maxValue = arr[0];
+        for(int i=1;i < arr.length;i++){
+          if(arr[i] > maxValue){
+            maxValue = arr[i];
+          }
+        }
+        return maxValue;
+    }
+    
+    //Method to get the minimum value of an array
+    public static int getMinValue(int[] arr){
+          int minValue = arr[0];
+          for(int i=1;i<arr.length;i++){
+            if(arr[i] < minValue){
+              minValue = arr[i];
+            }
+          }
+          return minValue;
+    }
+
 }

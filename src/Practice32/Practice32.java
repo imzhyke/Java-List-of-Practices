@@ -17,9 +17,14 @@ public class Practice32 {
           double arr[] = new double[3];
           double sum=0;
           
+          //To get the  value of an array
           for (int x=0;x<3;x++){
               System.out.printf("Enter Number %d: ",x+1);
+              
+              //Get the value of the index
               arr[x]=thisScans.nextDouble();
+              
+              //To get the sum 
               sum= arr[x]+ sum;
           }
           
