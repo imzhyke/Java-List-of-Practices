@@ -1,4 +1,11 @@
-
+/*
+ * Title : Practice 40 
+ * Name : Ezekiel P. Villadolid
+ * Description:Reversing a One-Dimensional Array: Write a Java Program that reads an integer one
+                dimensional array of size N. The program then reverses the elements of the array and
+                stores them in reverse order in the same array.
+ * Date: 6/3/2021
+*/
 package Practice40;
 
 import java.util.Scanner;
@@ -6,6 +13,7 @@ import java.util.Scanner;
 public class Practice40 {
 
     public static void main(String[] args) {
+       //Creating Scanner
         Scanner thisScans = new Scanner(System.in);
         
        System.out.print("Enter Array Size: ");

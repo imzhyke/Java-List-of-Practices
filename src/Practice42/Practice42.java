@@ -1,4 +1,9 @@
-
+/*
+ * Title : Practice 42
+ * Name : Ezekiel P. Villadolid
+ * Description:Program to print the largest and second largest element of the array.
+ * Date: 6/3/2021
+*/
 package Practice42;
 
 
@@ -28,7 +33,7 @@ public class Practice42 {
             second_max = arr[i];
         }
     }
-       
+       //To display the largets and 2nd largest number in an array
        System.out.println("The Largest Number in array is: "+max);
        System.out.println("The Second Largest Number in array is: "+second_max);
     }
