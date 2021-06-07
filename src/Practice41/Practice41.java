@@ -33,16 +33,12 @@ public class Practice41 {
         
         average/=n;
         System.out.println("Average Of The Student: "+average);
-        
         System.out.println("Students Got Grade Below The Average");
         System.out.println("Grade\t\tID");
         for(int x = 0 ; x < n ; x++){
             if(grades[x]<average){
                 System.out.println(grades[x]+"\t\t"+studId[x]);
             }
-        }
-        
-    }
-    
-    
+        } 
+    }  
 }

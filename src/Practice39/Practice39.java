@@ -1,8 +1,9 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+ * Title: Practice 39
+ * Name:  Ezekiel P. Villadolid
+ * Description: Program to copy array elements to another array.
+ * Date: 5/31/2021
+*/
 package Practice39;
 
 import java.util.Scanner;

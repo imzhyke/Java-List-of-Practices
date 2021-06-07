@@ -37,6 +37,5 @@ public class Practice45 {
                  System.out.print(cityTemp[x][y]+"\n");
             }
         }
-    }
-    
+    }  
 }
