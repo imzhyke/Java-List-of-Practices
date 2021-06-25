@@ -1,11 +1,11 @@
+/*
+ * Title : Practice 51
+ * Name : Ezekiel P. Villadolid
+ * Description: Selection sort - strings
+ * Date: 6/3/2021
+*/
 
 package Practice51;
-
-
-// Java program to implement selection sort
-// on array of strings
-import java.util.*;
-import java.io.*;
 
 import java.util.Scanner;
 
@@ -52,18 +52,21 @@ static void selectionSort(String arr[],int n)
 // Driver code
 public static void main(String args[])
 {
-	String arr[] = {"GeeksforGeeks",
-					"Practice.GeeksforGeeks",
-					"GeeksQuiz"};
+    
+        Scanner thisScans = new Scanner(System.in);
+        
+	String arr[] = new String[3];
+        
+       
 	int n = arr.length;
 		System.out.println("Given array is");
 		
-	// Printing the array before sorting
-	for(int i = 0; i < n; i++)
+        for(int i = 0; i < n; i++)
 	{
-		System.out.println(i+": "+arr[i]);
-	}
-	System.out.println();
+		System.out.print(i+": ");
+                arr[i] = thisScans.nextLine();
+	}        
+             
 
 	selectionSort(arr, n);
 
@@ -77,5 +80,5 @@ public static void main(String args[])
 }
 }
 
-/*This code is contributed by rajesh999*/
+
 

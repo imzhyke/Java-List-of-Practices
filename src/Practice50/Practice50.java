@@ -1,16 +1,14 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+ * Title : Practice 50
+ * Name : Ezekiel P. Villadolid
+ * Description: Bubble sort -String
+ * Date: 6/3/2021
+*/
 package Practice50;
 
 import java.util.Scanner;
 
-/**
- *
- * @author jruthie
- */
+
 public class Practice50 {
 
     //The bubble sort method
@@ -53,7 +51,7 @@ public class Practice50 {
                 //Print the  elements of array after sorting
                 System.out.println("\nString in sorted order are");  
                 for(int i=0; i < n; i++){  
-                        System.out.print("String ["+(i^+1)+"]: ");
+                        System.out.print("String ["+(i+1)+"]: ");
                         System.out.println(str[i] + " ");  
                 }  
                 
