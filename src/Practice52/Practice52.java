@@ -1,5 +1,5 @@
 /*
- * Title : Practice 51
+ * Title : Practice 52
  * Name : Ezekiel P. Villadolid
  * Description: Selection sort - ascending order and print the largest element
  * Date: 6/3/2021
